@@ -1,0 +1,332 @@
+```html
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasa Bangun Rumah Jabar Jaya Konstruksi | Bangun & Renovasi Rumah Jawa Barat</title>
+  <meta name="description" content="Jasa Bangun Rumah Jabar Jaya Konstruksi - Jasa pembangunan rumah baru dan renovasi rumah profesional melayani seluruh Jawa Barat. Hubungi Admin Ferdy Oktovianus (088214321193). Dokumentasi nyata di YouTube Cahaya Boss Kuli." />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for Brand Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brandBlack: '#0B0B0F',
+            brandDark: '#13131A',
+            brandCard: '#1A1A24',
+            brandPurple: '#7C3AED',
+            brandRed: '#E11D48',
+            brandYellow: '#FACC15',
+            waGreen: '#25D366',
+            ytRed: '#FF0000',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom subtle gradient accents */
+    .bg-gradient-brand {
+      background: linear-gradient(135deg, #7C3AED 0%, #E11D48 100%);
+    }
+    .text-gradient-brand {
+      background: linear-gradient(135deg, #A855F7 0%, #F43F5E 55%, #FACC15 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .border-glow {
+      border: 1px solid rgba(168, 85, 247, 0.25);
+    }
+    .border-glow:hover {
+      border-color: rgba(250, 204, 21, 0.6);
+    }
+  </style>
+</head>
+<body class="bg-brandBlack text-gray-100 font-sans antialiased selection:bg-brandPurple selection:text-white overflow-x-hidden">
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="sticky top-0 z-50 bg-brandBlack/90 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-2">
+      <!-- Brand Logo -->
+      <a href="#beranda" class="flex items-center gap-2.5 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-brand flex items-center justify-center shadow-lg shadow-purple-900/30 group-hover:scale-105 transition shrink-0">
+          <i class="fa-solid fa-house-chimney text-brandYellow text-lg"></i>
+        </div>
+        <div>
+          <span class="font-display font-extrabold text-sm sm:text-base md:text-lg tracking-tight text-white block leading-tight">
+            JASA BANGUN RUMAH JABAR <span class="text-brandYellow">JAYA KONSTRUKSI</span>
+          </span>
+          <span class="text-[11px] text-gray-400 font-medium tracking-wide">Bangun & Renovasi • Cahaya Boss Kuli</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-gray-300">
+        <a href="#layanan" class="hover:text-brandYellow transition">Layanan</a>
+        <a href="#keunggulan" class="hover:text-brandYellow transition">Keunggulan</a>
+        <a href="#youtube" class="hover:text-brandYellow transition">Dokumentasi YouTube</a>
+        <a href="#wilayah" class="hover:text-brandYellow transition">Area Jabar</a>
+      </nav>
+
+      <!-- Action Buttons: YouTube Merah & WA Hijau -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- YouTube Button (Strict Red #FF0000) -->
+        <a href="https://www.youtube.com/results?search_query=cahaya+boss+kuli" target="_blank" rel="noopener noreferrer"
+           aria-label="Channel YouTube Cahaya Boss Kuli"
+           class="inline-flex items-center gap-2 px-3 py-2 sm:px-3.5 sm:py-2 rounded-xl bg-[#FF0000] hover:bg-red-600 text-white text-xs sm:text-sm font-semibold shadow-md shadow-red-950/40 transition active:scale-95">
+          <i class="fa-brands fa-youtube text-base"></i>
+          <span class="hidden sm:inline">YouTube</span>
+        </a>
+
+        <!-- WhatsApp Button (Strict Green #25D366) -->
+        <a href="https://wa.me/6288214321193?text=Halo%20Pak%20Ferdy%20Oktovianus,%20saya%20ingin%20konsultasi%20jasa%20bangun%20/%20renovasi%20rumah%20di%20Jawa%20Barat." target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-gray-950 text-xs sm:text-sm font-bold shadow-md shadow-emerald-950/50 transition active:scale-95">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Chat Admin</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="beranda" class="relative pt-12 pb-16 sm:pt-20 sm:pb-24 overflow-hidden">
+    <!-- Ambient Color Blobs (Purple, Red, Yellow) -->
+    <div class="absolute -top-24 -left-24 w-72 h-72 sm:w-96 sm:h-96 bg-brandPurple/25 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-32 -right-24 w-72 h-72 sm:w-96 sm:h-96 bg-brandRed/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brandCard border border-brandYellow/40 text-brandYellow text-xs sm:text-sm font-semibold">
+            <span class="w-2 h-2 rounded-full bg-brandYellow animate-pulse"></span>
+            Melayani Seluruh Wilayah Jawa Barat
+          </div>
+
+          <h1 class="font-display font-extrabold text-3xl sm:text-5xl lg:text-[52px] leading-[1.15] tracking-tight text-white">
+            Wujudkan Rumah Impian Anda Bersama <span class="text-gradient-brand">Kontraktor & Tukang Berpengalaman</span>
+          </h1>
+
+          <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Jasa <strong>Pembangunan Rumah dari Nol</strong> & <strong>Renovasi Rumah</strong> (total maupun sebagian). Pengerjaan rapi, spesifikasi material jujur, RAB transparan, dan bergaransi.
+          </p>
+
+          <!-- CTA Group -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3.5 pt-2">
+            <!-- Primary WA CTA (Green) -->
+            <a href="https://wa.me/6288214321193?text=Halo%20Pak%20Ferdy%20Oktovianus,%20saya%20tertarik%20konsultasi%20pembangunan/renovasi%20rumah%20di%20Jawa%20Barat." target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-[#25D366] hover:bg-[#1ebe5d] text-gray-950 font-extrabold text-sm sm:text-base shadow-lg shadow-emerald-500/20 transition transform hover:-translate-y-0.5">
+              <i class="fa-brands fa-whatsapp text-2xl"></i>
+              <div class="text-left leading-tight">
+                <span class="block">Konsultasi Gratis via WA</span>
+                <span class="text-xs font-semibold opacity-90">Ferdy Oktovianus • 0882-1432-1193</span>
+              </div>
+            </a>
+
+            <!-- Secondary YouTube CTA (Strict Red #FF0000) -->
+            <a href="https://www.youtube.com/results?search_query=cahaya+boss+kuli" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-2xl bg-[#FF0000] hover:bg-red-600 text-white font-bold text-sm sm:text-base shadow-lg shadow-red-900/30 transition transform hover:-translate-y-0.5">
+              <i class="fa-brands fa-youtube text-xl"></i>
+              <span>YouTube Cahaya Boss Kuli</span>
+            </a>
+          </div>
+
+          <!-- Trust Highlights -->
+          <div class="grid grid-cols-3 gap-3 pt-4 border-t border-white/10 max-w-lg mx-auto lg:mx-0">
+            <div>
+              <p class="font-display font-extrabold text-xl sm:text-2xl text-brandYellow">100%</p>
+              <p class="text-xs text-gray-400">RAB Transparan</p>
+            </div>
+            <div>
+              <p class="font-display font-extrabold text-xl sm:text-2xl text-white">27 Kota/Kab</p>
+              <p class="text-xs text-gray-400">Se-Jawa Barat</p>
+            </div>
+            <div>
+              <p class="font-display font-extrabold text-xl sm:text-2xl text-brandRed">Bergaransi</p>
+              <p class="text-xs text-gray-400">Hasil Rapi & Kuat</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Card -->
+        <div class="lg:col-span-5">
+          <div class="relative rounded-3xl overflow-hidden bg-brandCard border border-white/10 shadow-2xl">
+            <img 
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" 
+              onerror="this.onerror=null;this.src='https://placehold.co/800x600/1A1A24/FACC15?text=Rumah+Minimalis+Modern+Jabar';"
+              alt="Desain Pembangunan Rumah Minimalis Modern Jawa Barat" 
+              class="w-full h-72 sm:h-80 object-cover"
+            />
+            <div class="p-5 sm:p-6 bg-gradient-to-t from-brandBlack via-brandDark to-brandCard">
+              <div class="flex items-center justify-between gap-3 mb-3">
+                <span class="px-3 py-1 rounded-lg bg-gradient-brand text-white text-xs font-bold uppercase tracking-wider">
+                  Admin Resmi
+                </span>
+                <a href="https://www.youtube.com/results?search_query=cahaya+boss+kuli" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-[#FF0000] px-2.5 py-1 rounded-lg hover:bg-red-600 transition">
+                  <i class="fa-brands fa-youtube"></i> Cahaya Boss Kuli
+                </a>
+              </div>
+              <h2 class="font-display font-bold text-lg sm:text-xl text-white">FERDY OKTOVIANUS</h2>
+              <p class="text-gray-400 text-xs sm:text-sm mt-1">
+                Siap membantu survei lokasi, perhitungan anggaran biaya (RAB), hingga serah terima kunci rumah Anda.
+              </p>
+              <div class="mt-4 pt-4 border-t border-white/10 flex items-center justify-between">
+                <span class="text-xs text-gray-400">WhatsApp Aktif:</span>
+                <a href="https://wa.me/6288214321193" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-[#25D366] hover:underline">
+                  0882-1432-1193 <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LAYANAN UTAMA ==================== -->
+  <section id="layanan" class="py-16 sm:py-20 bg-brandDark border-y border-white/5">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-brandYellow font-bold text-xs uppercase tracking-widest">Layanan Kami</span>
+        <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-white mt-2">
+          Solusi Lengkap Bangun & Renovasi
+        </h2>
+        <p class="text-gray-400 text-sm sm:text-base mt-3">
+          Disesuaikan dengan anggaran dan kebutuhan keluarga Anda, dikerjakan oleh tim ahli lapangan.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Card 1 -->
+        <div class="bg-brandCard p-6 rounded-2xl border-glow transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brandPurple/20 text-brandPurple flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-trowel-bricks"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-2">Bangun Rumah Baru dari Nol</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Pembangunan rumah 1 lantai, 2 lantai, maupun ruko dari tanah kosong hingga siap huni (sistem borongan material atau jasa saja).
+            </p>
+          </div>
+          <a href="https://wa.me/6288214321193?text=Halo%20Pak%20Ferdy,%20saya%20ingin%20konsultasi%20Bangun%20Rumah%20Baru%20dari%20nol." target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 text-xs font-bold text-[#25D366] hover:underline">
+            <i class="fa-brands fa-whatsapp text-sm"></i> Konsultasi via WhatsApp <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-brandCard p-6 rounded-2xl border-glow transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brandRed/20 text-brandRed flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-hammer"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-2">Renovasi Total & Sebagian</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Perbaikan rumah lama, perluasan ruang tamu, renovasi dapur & kamar mandi, hingga ubah tampilan fasad rumah menjadi minimalis modern.
+            </p>
+          </div>
+          <a href="https://wa.me/6288214321193?text=Halo%20Pak%20Ferdy,%20saya%20ingin%20konsultasi%20Renovasi%20Rumah." target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 text-xs font-bold text-[#25D366] hover:underline">
+            <i class="fa-brands fa-whatsapp text-sm"></i> Konsultasi via WhatsApp <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-brandCard p-6 rounded-2xl border-glow transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brandYellow/20 text-brandYellow flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-2">Tambah Lantai / Nge-Dak</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Peninggian bangunan, pengecoran dak lantai 2 (konvensional maupun bondek/hebel), serta penambahan kamar tidur di lantai atas.
+            </p>
+          </div>
+          <a href="https://wa.me/6288214321193?text=Halo%20Pak%20Ferdy,%20saya%20ingin%20konsultasi%20Tambah%20Lantai%20/%20Dak%20Rumah." target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 text-xs font-bold text-[#25D366] hover:underline">
+            <i class="fa-brands fa-whatsapp text-sm"></i> Konsultasi via WhatsApp <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-brandCard p-6 rounded-2xl border-glow transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-house-chimney-crack"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-2">Perbaikan Atap & Kanopi</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Ganti rangka atap baja ringan, perbaikan atap bocor/rembes, pemasangan genteng baru, serta pembuatan kanopi teras dan carport.
+            </p>
+          </div>
+          <a href="https://wa.me/6288214321193?text=Halo%20Pak%20Ferdy,%20saya%20butuh%20jasa%20Perbaikan%20Atap%20/%20Kanopi." target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 text-xs font-bold text-[#25D366] hover:underline">
+            <i class="fa-brands fa-whatsapp text-sm"></i> Konsultasi via WhatsApp <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-brandCard p-6 rounded-2xl border-glow transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-rose-500/20 text-rose-400 flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-paint-roller"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-2">Pagar & Finishing Rapi</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Pembuatan pagar tembok & besi minimalis, pemasangan keramik/granit, plafon PVC/gypsum, pengecatan interior-eksterior, dan instalasi listrik.
+            </p>
+          </div>
+          <a href="https://wa.me/6288214321193?text=Halo%20Pak%20Ferdy,%20saya%20butuh%20jasa%20Pembuatan%20Pagar%20/%20Finishing%20Rumah." target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 text-xs font-bold text-[#25D366] hover:underline">
+            <i class="fa-brands fa-whatsapp text-sm"></i> Konsultasi via WhatsApp <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Card 6: Direct Consultation Card -->
+        <div class="bg-gradient-to-br from-brandPurple/30 via-brandCard to-brandRed/25 p-6 rounded-2xl border border-brandYellow/40 transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brandYellow text-brandBlack flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-file-invoice-dollar"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-2">Hitung RAB Resmi & Survei</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">
+              Punya ukuran tanah atau rencana renovasi tertentu? Ceritakan kebutuhan Anda langsung ke Admin untuk hitungan RAB yang akurat.
+            </p>
+          </div>
+          <a href="https://wa.me/6288214321193?text=Halo%20Pak%20Ferdy%20Oktovianus,%20saya%20ingin%20minta%20dibuatkan%20rincian%20RAB%20dan%20jadwal%20survei." target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#1ebe5d] text-gray-950 text-xs font-extrabold transition">
+            <i class="fa-brands fa-whatsapp text-base"></i> Chat Admin Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== KEUNGGULAN LAYANAN ==================== -->
+  <section id="keunggulan" class="py-16 sm:py-20 bg-brandBlack">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-5 space-y-4">
+          <span class="text-brandRed font-bold text-xs uppercase tracking-widest">Mengapa Memilih Kami?</span>
+          <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-white leading-tight">
+            Kerja Jujur, Rapi, & Terbukti di Lapangan
+          </h2>
+          <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+            Kami memahami membangun atau merenovasi rumah adalah investasi besar bagi keluarga. Bersama tim <strong>Jasa Bangun Rumah Jabar Jaya Konstruksi (Cahaya Boss Kuli)</strong>, setiap progres pekerjaan terpantau jelas.
+          </p>
+          <div class="pt-2">
+            <a href="https://wa.me/6288214321193?text=Halo%20Pak%20Ferdy%20Oktovianus,%20saya%20ingin%20jadwalkan%20konsultasi%20atau%20su
